@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th,tr,td{
+            border:2px solid;
+            border-collapse:collapse; 
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let table=document.createElement("table")
+        let tr1=document.createElement("tr")
+        let tr2=document.createElement("tr")
+        let tr3=document.createElement("tr")
+        let head1=document.createElement("th")
+        let head2=document.createElement("th")
+        let td1=document.createElement("td")
+        let td2=document.createElement("td")
+        let td3=document.createElement("td")
+        let td4=document.createElement("td")
+        head1.innerText="ANIMALS"
+        head2.innerText="BIRDS"
+        td1.innerText="lion"
+        td2.innerText="Tiger"
+        td3.innerText="parrots"
+        td4.innerText="sparrow"
+        tr1.appendChild(head1)
+        tr1.appendChild(head2)
+        tr2.appendChild(td1)
+        tr2.appendChild(td2)
+        tr3.appendChild(td3)
+        tr3.appendChild(td4)
+        table.appendChild(tr1)
+        table.appendChild(tr2)
+        table.appendChild(tr3)
+        document.body.appendChild(table)
+
+        
+    </script>
+</body>
+</html>
